@@ -1,6 +1,8 @@
 html body {text-align: center;}
 html body.dark {background: #252a2b;color: #efefef;}
 
+img {max-width: 100%;}
+
 /* SCROLLBAR */
 /* width */
 ::-webkit-scrollbar {width: 10px;height: 0;}
