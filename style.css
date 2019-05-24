@@ -1,11 +1,19 @@
 html body {text-align: center;}
 html body.dark {background: #252a2b;color: #efefef;}
 
+img {max-width: 100%;}
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {width: 10px;height: 0;}
+::-webkit-scrollbar-track {background: #f1f1f1;}
+::-webkit-scrollbar-thumb {background: #888;}
+::-webkit-scrollbar-thumb:hover {background: #555;}
+
+
 .owl-carousel .owl-item img {width: auto;max-width: 100%;display: inline-block;}
 
-
-
-.owl-thumbs {margin: 25px auto 100px;max-width: 1920px;}
+.owl-thumbs {margin: 25px auto 100px;max-width: 1920px;max-height: 50vh;overflow-y: scroll;}
 .owl-thumbs .owl-thumb-item {padding: 0;margin: 10px;border: 0;background-position: center center;background-size: auto 100%;background-repeat: no-repeat;width: 150px;height: 70px;/* opacity: 0.5; */transition: 200ms;display: inline-block;position: relative;}
 .owl-thumbs .owl-thumb-item.active {opacity: 1;}
 .owl-thumbs .owl-thumb-item img {width: auto;height: 100%;margin: 0;padding: 0;}
