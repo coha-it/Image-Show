@@ -13,7 +13,7 @@ foreach ($dirs as $key => $entry) {
 	// Build Slider
 	$slider .= '<div class="pan" data-big="'.$imgsrc.'" data-text="'.$entry.'"><img src="' . $imgsrc . '" alt="'.$imgsrc.'" class="" /></div>';
 
-	$thumbs .= '<button class="owl-thumb-item" style="background-image: url(\''.$imgsrc.'\');"></button>';
+	$thumbs .= '<button class="owl-thumb-item" title="'.$imgsrc.'"><div class="img" style="background-image: url(\''.$imgsrc.'\');" ></div><div class="text">'.$entry.'</div></button>';
 
 	$gallery .= '<div class="pan" data-big="'.$imgsrc.'" data-text="'.$entry.'">';
 	$gallery .= ' 	<h5>'.$entry.'</h5>';
