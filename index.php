@@ -18,14 +18,25 @@
 	$dirs = scandir($path);
 	$dirs = array_diff( $dirs, ['..', '.', '.DS_Store'] );
 
+	$slider = '';
+
+	foreach ($dirs as $key => $entry) {
+		$imgsrc = $path . $entry;
+		
+		$slider .= '<img src="' . $imgsrc . '" alt="'.$imgsrc.'" >';
+	}
+
 	?>
+
+
+	<!-- OWL -->
+	<div class="image-gallery ">
+		<?php echo $slider; ?>
+	</div>
 	
-	<?php foreach ($dirs as $key => $entry): ?>
-
-		<?php $imgsrc = $path . $entry; ?>
-		<img src="<?php echo $imgsrc; ?>" alt="<?php echo $imgsrc; ?>" >
-	<?php endforeach; ?>
-
+	<div class="image-gallery blank">
+		<?php echo $slider; ?>
+	</div>
 
 
 
@@ -38,7 +49,7 @@
 	<script type="text/javascript">
 		
 		// PanZoom 
-
+		jQuery('.image-gallery').owl
 
 	</script>
 
