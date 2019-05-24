@@ -2,7 +2,7 @@
 
 $path = 'images/';
 $dirs = scandir($path);
-$dirs = array_diff( $dirs, ['..', '.', '.DS_Store'] );
+$dirs = array_diff( $dirs, ['..', '.', '.DS_Store', '.git', '.htaccess'] );
 
 $slider = '';
 $thumbs = '';
